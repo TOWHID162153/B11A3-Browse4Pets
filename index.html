@@ -58,29 +58,27 @@
                 <!-- nav left part -->
                 <div class="navbar-start">
                     <!-- nav dropdown -->
-                    <div class="dropdown md:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
+                    <div class="navbar justify-between md:none">
+                        <div class="dropdown md:hidden">
+                            <div tabindex="0" role="button" class="btn btn-ghost">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                                <li><a class="font-sora font-normal text-xl text-[##111111]">Find a pet</a></li>
+                                <li><a class="font-sora font-normal text-xl text-[##111111]">Breeds</a></li>
+                                <li><a class="font-sora font-normal text-xl text-[##111111]">Contact us</a></li>
+                            </ul>
                         </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a class="font-sora font-normal text-xl text-[##111111]">Find a pet</a></li>
-                            <li><a class="font-sora font-normal text-xl text-[##111111]">Breeds</a></li>
-                            <li><a class="font-sora font-normal text-xl text-[##111111]">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <!-- nav logo -->
-                    <div class="flex justify-center items-center gap-3">
-                        <div class="w-12 h-12 hover:animate-bounce link link-hover">
-                            <img class="w-100%" src="c1-assets/logo-header.png" alt="logo-header">
-                        </div>
-                        <div class="hidden md:block">
-                            <a class="font-sora font-normal text-2xl text-[#111111]">Browse<span
-                                    class="text-[#FFDC26]">4</span>Pets</a>
+                        <!-- nav logo -->
+                        <div class="flex justify-center items-center gap-3">
+                            <div class="w-12 h-12 hover:animate-bounce link link-hover">
+                                <img class="w-100%" src="c1-assets/logo-header.png" alt="logo-header">
+                            </div>
+                            <div class="hidden md:block">
+                                <a class="font-sora font-normal text-2xl text-[#111111]">Browse<span class="text-[#FFDC26]">4</span>Pets</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -270,14 +268,14 @@
                 </div>
                 <!-- big card -->
                 <div class="flex flex-col lg:flex-row gap-4">
-                    <div class="bg-[#F9DF8A] rilative flex lg:flex-row flex-col rounded-xl overflow-hidden lg:flex-1">
-                        <div class="ml-12 relative">
-                            <h3 class="text-display font-bold text-lg lg:text-3xl mt-12">T- Shirt For Dogs</h3>
-                            <p class="text-sora font-normal text-base lg:text-xl lg:mb-3 ">Discover a world of treats, toys, and essentials
+                    <div class="bg-[#F9DF8A]  pt-8 pl-8 lg:mb-0 lg:pl-12 lg:pt-12 lg:mr-16 rilative flex lg:flex-row flex-col rounded-xl overflow-hidden lg:flex-1">
+                        <div class="">
+                            <h3 class="text-display font-bold text-3xl mb-3">T- Shirt For Dogs</h3>
+                            <p class="text-sora font-normal text-xl mb-3 ">Discover a world of treats, toys, and essentials
                                 handpicked for</p>
-                            <a class="btn font-sora font-normal text-base lg:text-xl text-[#11111]">Shop Now</a>
+                            <a class="btn font-sora font-normal text-xl text-[#11111]">Shop Now</a>
                         </div>
-                        <img class="w-[244px]" src="c1-assets/cute-pet-small.png" alt="cute-pet-small">
+                        <img class="w-[400px] lg:w-[450px] relative -top-28 -right-42 lg:-top-0 lg:right-22" src="c1-assets/cute-pet-small.png" alt="cute-pet-small">
                     </div>
                     <div
                         class="rounded-xl border  lg:flex flex-col lg:flex-row flex-start lg:items-center gap-8 drop-shadow-2xl">
