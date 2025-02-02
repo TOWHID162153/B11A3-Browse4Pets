@@ -1,103 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trending Pet Products</title>
+    <title>Browse4Pets</title>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- Tailwind CSS v4-->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- DaisyUI v4-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CSS Custom -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+
+                    colors: {
+                        clifford: '#da373d',
+                        'four-clr': '#FFDC26',
+                        'info-clr': '#585858',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- style -->
+    <style>
+        .font-sora {
+            font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .font-display {
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
-
-<body class="bg-[#fef7f2] p-10">
-
-    <h2 class="text-2xl font-bold mb-6">Trending Pet Products</h2>
-
-    <div class="grid grid-cols-4 gap-6">
-        <!-- Left Promo Section -->
-        <div class="bg-yellow-200 p-6 rounded-lg flex flex-col justify-between">
-            <div>
-                <h3 class="text-xl font-bold mb-2">T-Shirt For Dogs</h3>
-                <p class="text-gray-700 text-sm">
-                    Discover a world of treats, toys, and essentials handpicked for your pet.
-                </p>
-            </div>
-            <button class="mt-4 bg-white px-4 py-2 rounded-md font-medium shadow-md">
-                Shop Now
-            </button>
-            <img src="https://placehold.co/200x200" alt="Dog wearing T-shirt" class="mt-4 w-full">
-        </div>
-
-        <!-- Product Grid -->
-        <div class="col-span-3 grid grid-cols-3 gap-4">
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-row items-center">
-                <div class="bg-gray-400 p-10">
-                    <img src="c1-assets/cat-cartoon.png" alt="Pet Bed" class="mb-2">
-                </div>
-                <div>
-                    <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                    <h4 class="font-bold text-md">Pet Bed</h4>
-                    <p class="text-gray-700 text-sm">$39.99</p>
+<body>
+    <section class="w-full h-[1080px]">
+        <p>
+            mx-4 mb-16 relative bottom-60 lg:bottom-56
+        </p>
+        <p>
+            p-10 lg:relative lg:bottom-18
+        </p>
+    </section>
+    <footer class="bg-four-clr bg-opacity-50 relative">
+        <div class=" relative -top-36">
+            <div class="md:container md:mx-auto mx-5">
+                <div class="card lg:card-side bg-[#FFF9F4] shadow-xl">
+                    <figure class="my-5 ml-5">
+                        <img class="mx-w-[190px] lg:ml-32" src="c1-assets/cute-pet-mid.png" alt="Album" />
+                    </figure>
+                    <div class="card-body lg:ml-32">
+                        <h2 class="text-display font-bold text-xl lg:text-4xl my-2.5 lg:my-5 text-center lg:text-left">Get
+                            Pawsome News!</h2>
+                        <p
+                            class="text-sora text-base lg:text-xl font-medium lg:font-bold mb-3 lg:mb-9 grow-0 text-center lg:text-left">
+                            Exclusive training tips, ticks, product deals and more.</p>
+                        <input type="text" placeholder="Type here"
+                            class="input input-bordered input-warning w-full  lg:max-w-xl lg:mb-9" />
+                        <div class="card-actions justify-center lg:justify-start ">
+                            <button class="btn btn-warning test-sora lg:text-xl">Subscribe</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
-
-            <div class="bg-white p-4 rounded-lg shadow-md flex flex-col items-center">
-                <img src="https://placehold.co/50x50" alt="Pet Bed" class="mb-2">
-                <div class="flex items-center text-yellow-500 text-sm">⭐ 4.5</div>
-                <h4 class="font-bold text-md">Pet Bed</h4>
-                <p class="text-gray-700 text-sm">$39.99</p>
-            </div>
+            <footer class="md:container md:mx-auto footer text-base-content mt-36 mx-5">
+                <!-- footer logo part -->
+                <nav>
+                    <div class="flex justify-center items-center gap-3">
+                        <div class="w-12 h-12">
+                            <img class="w-100% hover:animate-bounce" src="c1-assets/logo-footer.png" alt="logo-header">
+                        </div>
+                        <div class="hidden md:block">
+                            <a class="font-sora font-normal text-2xl text-[#111111]">Browse<span
+                                    class="text-[#FFDC26]">4</span>Pets</a>
+                        </div>
+                    </div>
+                    <a class="link link-hover font-sora text-xl text-info-clr">Discover a world of treats, toys, and <br>
+                        essentials handpicked for your furry <br> friends</a>
+                </nav>
+                <!-- footer sections -->
+                <nav>
+                    <a class="link link-hover font-sora text-xl">Find a pet</a>
+                    <a class="link link-hover font-sora text-xl">Breeds</a>
+                    <a class="link link-hover font-sora text-xl">Contact</a>
+                </nav>
+                <!-- footer icons -->
+                <nav>
+                    <h6 class="footer-title">Social</h6>
+                    <div class="grid grid-flow-col gap-4">
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                                <path
+                                    d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a>
+                            <img src="/c1-assets/instra.png" alt="instra">
+                        </a>
+                        <a>
+                            <img src="c1-assets/linkdin.png" alt="linkdin">
+                        </a>
+                        <a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current">
+                                <path
+                                    d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+                                </path>
+                            </svg>
+                        </a>
+            
+                    </div>
+                </nav>
+            </footer>
         </div>
-    </div>
-
+    </footer>
 </body>
-
 </html>
