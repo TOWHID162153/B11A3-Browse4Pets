@@ -58,21 +58,7 @@
                 <!-- nav left part -->
                 <div class="navbar-start">
                     <!-- nav dropdown -->
-                    <div class="dropdown md:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a class="font-sora font-normal text-xl text-[##111111]">Find a pet</a></li>
-                            <li><a class="font-sora font-normal text-xl text-[##111111]">Breeds</a></li>
-                            <li><a class="font-sora font-normal text-xl text-[##111111]">Contact us</a></li>
-                        </ul>
-                    </div>
+                    
                     <!-- nav logo -->
                     <div class="flex justify-center items-center gap-3">
                         <div class="w-12 h-12 hover:animate-bounce link link-hover">
@@ -93,6 +79,20 @@
                     </ul>
                 </div>
                 <!-- nav right part -->
+                <div class="navbar-end flex md:hidden">
+                    <div class="dropdown block md:hidden">
+                        <div tabindex="0" role="button" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a class="font-sora font-normal text-xl text-[##111111]">Find a pet</a></li>
+                            <li><a class="font-sora font-normal text-xl text-[##111111]">Breeds</a></li>
+                            <li><a class="font-sora font-normal text-xl text-[##111111]">Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="navbar-end hidden md:flex">
                     `
 
@@ -260,7 +260,7 @@
         </section>
 
         <!-- Trending Pet Products -->
-        <section>
+        <section class="mx-4">
             <div class="md:container mx-auto my-36">
                 <!-- section main title -->
                 <div class="mb-12">
